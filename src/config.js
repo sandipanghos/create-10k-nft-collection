@@ -6,22 +6,35 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "YOUR COLLECTION NAME";
-const description = "Remember to replace this description";
+const namePrefix = "The mask man new";
+const description = "Illustration of Dali mask man";
 const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 5,
+    growEditionSizeTo: 1,
     layersOrder: [
       { name: "Background" },
-      { name: "Eyeball" },
-      { name: "Eye color" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
+      { name: "SideCurve" },
+      { name: "Face" },
+      { name: "ThirdEye" },
+      { name: "EyeBrowLeft" },
+      { name: "EyeBrowRight" },
+      { name: "RightEye" },
+      { name: "LeftEye" },
+      { name: "EyeBrowTopSide" },
+      { name: "RightCheek" },
+      { name: "EyeBall" },
+      { name: "EyeBrowBottom" },
+      { name: "Hat" },
+      { name: "LeftCheek" },
+      { name: "Nose" },
+      { name: "RightMoustace" },
+      { name: "LeftMoustace" },
+      { name: "Lip" },
+      { name: "Teeth" },
+      { name: "Chin" }
     ],
   },
 ];
@@ -31,29 +44,29 @@ const shuffleLayerConfigurations = false;
 const debugLogs = false;
 
 const format = {
-  width: 512,
-  height: 512,
+  width: 3309,
+  height: 4136,
   smoothing: false,
 };
 
 const extraMetadata = {
-  external_url: "https://codecats.xyz", // Replace with your website or remove this line if you do not have one.
+  //external_url: "", // Replace with your website or remove this line if you do not have one.
 };
 
 // NFTPort Info
 // ** REQUIRED **
-const AUTH = "YOUR API KEY HERE";
+const AUTH = "be093210-1eb0-4a01-93e6-ba0e71119620";
 const LIMIT = 2; // Your API key rate limit
-const CONTRACT_NAME = 'CRYPTOPUNKS';
-const CONTRACT_SYMBOL = 'CP';
+const CONTRACT_NAME = 'TheMask';
+const CONTRACT_SYMBOL = 'TM';
 const CONTRACT_TYPE = 'erc721';
-const MINT_TO_ADDRESS = 'YOUR WALLET ADDRESS HERE';
+const MINT_TO_ADDRESS = '0xfb81c36Db8Ef5062E16aCa9929eAF6AbC93a29D8';
 const CHAIN = 'rinkeby';
 const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
 const ROYALTY_SHARE = 1000; // Percentage of the token price that goes to the royalty address. 100 bps = 1%
-const ROYALTY_ADDRESS = "0xd8B808A887326F45B2D0cd999709Aa6264CeF919"; // Address that will receive the royalty
+const ROYALTY_ADDRESS = "0xfb81c36Db8Ef5062E16aCa9929eAF6AbC93a29D8"; // Address that will receive the royalty
 // ** OPTIONAL **
-let CONTRACT_ADDRESS = "YOUR CONTRACT ADDRESS"; // If you want to manually include it
+let CONTRACT_ADDRESS = "0xb458c00ee56738Cb534379605AA576d61547EFC9"; // If you want to manually include it
 // Generic Metadata is optional if you want to reveal your NFTs
 const GENERIC = false; // Set to true if you want to upload generic metas and reveal the real NFTs in the future
 const GENERIC_TITLE = "Unknown"; // Replace with what you want the generic titles to say.
